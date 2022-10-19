@@ -10,20 +10,14 @@ body{
     "footer";
 }
 
-header{
-    grid-area: header;
-}
-
 h1, h2, h3, p{
     text-align: center;
     
 }
 
-li{
-    border: solid 1px red;
-    border-radius: 10px;
-    border-width: 4px;
-    border-collapse: collapse;
+ul{
+    text-align: center;
+    padding:0;
 }
 
 nav{
@@ -37,24 +31,4 @@ nav > ul{
 
 nav li{
     list-style-type: none;
-}
-
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-a{
-    display: block;
-    text-align: center;
-}
-
-img{
-    width: 75%;
-}
-
-ul{
-    text-align: center;
-    padding:0;
 }
