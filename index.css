@@ -10,14 +10,21 @@ body{
     "footer";
 }
 
+header{
+    grid-area: header;
+}
+
 h1, h2, h3, p{
     text-align: center;
+    color: darkorange;
     
 }
 
-ul{
-    text-align: center;
-    padding:0;
+li{
+    border: solid 1px purple;
+    border-radius: 10px;
+    border-width: 4px;
+    border-collapse: collapse;
 }
 
 nav{
@@ -31,4 +38,46 @@ nav > ul{
 
 nav li{
     list-style-type: none;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table tr:nth-child(even){
+    background-color: purple;
+}
+
+table tr:nth-child(even){
+    color: white;
+}
+
+table tr:nth-child(odd){
+    background-color: darkorange;
+}
+
+table, td, th{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    border-collapse: collapse;
+    width: 700px;
+    height: 40px;
+    nth
+}
+
+a{
+    display: block;
+    text-align: center;
+}
+
+img{
+    width: 60%;
+}
+
+ul{
+    padding:0;
 }
