@@ -1,5 +1,7 @@
+/*#region body-css*/
 body{
-    background-color: gray;
+    background-color: #050728;
+    font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 75px 50px auto auto ;
@@ -8,76 +10,107 @@ body{
     "nav"
     "main"
     "footer";
-}
+}  /* Backgrund färg, grid bas kod och hur stor olika delar är. */
+/*#endregion body-css*/
 
 header{
     grid-area: header;
-}
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}  /*grid*/
 
 h1, h2, h3, p{
     text-align: center;
-    color: darkorange;
-    
-}
+    color: #f7bd18;
+} /*Färg till alla rubrik och p och att de ska vara i center av sidan*/
 
-li{
-    border: solid 1px purple;
-    border-radius: 10px;
-    border-width: 4px;
-    border-collapse: collapse;
-}
+p{
+    color: white;
+    margin: 15px 20%;
+
+} /*färg och hur stor den kan vara. Med hjälp av margin.
+15px är för vertical och 20% är för horizontal*/
 
 nav{
     grid-area: nav;
-}
+}/*grid*/
 
 nav > ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
+    padding: 10px;
+}/*storlek på listan*/
 
 nav li{
     list-style-type: none;
-}
+}/*Style som listan här. Det är none har eftersom vi behöver den bara för naviaton menu*/
 
 .center{
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-table tr:nth-child(even){
-    background-color: purple;
-}
+}/*olika saker som jag behöver att vara i mitten som t.ex. bilder och länkar*/
 
 table tr:nth-child(even){
     color: white;
-}
+    background-color: #AB8009;
+}/*zebra stripping till table*/
 
 table tr:nth-child(odd){
-    background-color: darkorange;
-}
+    color: white;
+    background-color: #1d1112;
+}/*zebra stripping till table*/
+
+table tr td{
+    padding: 7px;
+}/*padding till td*/
 
 table, td, th{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid white;
+    border: 3px solid white;
     border-collapse: collapse;
     width: 700px;
     height: 40px;
-    nth
-}
+}/*att table ska vara i center och storlek på den
+ ska vara lika från båda sidor(left and right). border till table, färg och storlek på den.*/
 
 a{
-    display: block;
-    text-align: center;
-}
+display: block;
+text-align: center;
+}/*så at länkar ska vara i mitten*/
+
+.nav li a{
+    border: solid 1px #f7bd18;
+    background-color: #1d1112;
+    border-radius: 15px;
+    border-width: 4px;
+    border-style: inset;
+    border-collapse: collapse;
+    padding: 10px 55px;
+} /*Border till navigation lista. och så att den ska vara i mitten. också padding till den för att ändra storlek på border*/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}/**/
+
+a:visited{
+color: white;
+}/*länkar som man har klickat på ska ändra färg(psudeoselektor)*/
+      
+a:hover{
+color: #f7bd18;
+}/*färg för när man har mus över länk(psudeoselektor)*/
 
 img{
     width: 60%;
-}
+} /*storlek på bilder(width)*/
 
 ul{
-    padding:0;
-}
+    padding: 0px;
+    margin:auto;
+    color: white;
+    list-style-type: circle;
+}/*padding 0 så att den ska inte flittas. margin auto för att den ska vara i mitten*/
